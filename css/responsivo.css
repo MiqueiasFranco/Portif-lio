@@ -1,0 +1,43 @@
+@media screen and (min-width: 380px) {
+    .containerprojetos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+    .containerprojetos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .content {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .home {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    img {
+        order: -1;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .containerprojetos {
+        display: flex;
+
+    }
+
+}
