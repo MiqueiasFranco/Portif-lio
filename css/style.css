@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(45deg, black, #5C6374, #5C7463, #8AAF95, gray);
@@ -27,41 +28,50 @@ body {
     animation: color 20s ease infinite;
 }
 
-@keyframes color{
-    0%{
+@keyframes color {
+    0% {
         background-position: 0% 50%;
     }
-    50%{
+
+    50% {
         background-position: 50% 100%;
     }
-    100%{
+
+    100% {
         background-position: 0% 50%;
     }
 }
 
 .home {
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    padding-left: 20px;
+    height: 100vh;
+    width: 100vw;
     align-items: center;
     font-size: large;
-    display: flex;
-    padding: 10px;
 }
 
 .home img {
-    width: 40vw;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 90%;
     filter: drop-shadow(1px 1px 10px #409efc);
-    position: initial;
     animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
-    0%,100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-10px);
     }
 }
@@ -71,8 +81,14 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    height: 20%;
     font-size: larger;
-    gap: 3rem;
+}
+
+.content .icons {
+    justify-content: flex-start;
+    margin-left: 0;
 }
 
 .content span {
@@ -110,12 +126,32 @@ body {
     }
 
     to {
-        width:9em;
+        width: 9em;
     }
 }
 
 
 nav {
+    position: fixed;
+    top: 10px;
+    left: 8%;
+    right: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-shadow: 1px 2px 5px black;
+    z-index: 10;
+}
+
+.logo {
+    font: 40px;
+    text-shadow: 1px 2px 5px black;
+}
+
+.logo {
     position: fixed;
     top: 10px;
     left: 8%;
@@ -128,11 +164,7 @@ nav {
     border-radius: 10px;
     text-shadow: 1px 2px 5px black;
     z-index: 10;
-}
 
-.logo {
-    font: 40px;
-    text-shadow: 1px 2px 5px black;
 }
 
 .logo span {
@@ -211,13 +243,13 @@ nav ul li a:hover {
 
 ::-webkit-scrollbar {
     background-color: #313131;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
 
     background-color: #409EFC;
-    width: 10px;
+    width: 5px;
     border-radius: 5px;
 }
 
