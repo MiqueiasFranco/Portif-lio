@@ -19,6 +19,7 @@
     .containerprojetos {
         display: grid;
         grid-template-columns: 1fr;
+        overflow-y: scroll;
     }
 
 }
@@ -46,9 +47,21 @@
 }
 
 @media screen and (max-width: 830px) {
-
+    
+    .apresentacao{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
     .content {
-        order: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content .img{
+        margin-left: 0;
+        order: -1;
     }
 
 
@@ -94,7 +107,7 @@
         background-color: #242323ce;
         border-radius: 10px 0 0 10px;
         height: 100vh;
-        width: 30%;
+        width: 40vw;
         z-index: 20;
     }
 }

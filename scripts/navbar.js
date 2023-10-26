@@ -8,16 +8,12 @@ function onNavbar() {
     if (showNav) {
         navbar.style.marginRight = '0vw';
         navbar.style.animationName = 'mostrar';
-        content.style.filter = 'blur(3px)'
-        container.style.filter = 'blur(3px)'
-        banner.style.filter = 'blur(3px)'
+        
     }
     else {
         navbar.style.marginRight = '-100vw';
         navbar.style.animationName = 'ofNav';
-        content.style.filter = ''
-        container.style.filter = ''
-        banner.style.filter = ''
+        
     }
 
 }

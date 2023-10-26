@@ -45,7 +45,6 @@ body {
 .home {
     position: relative;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding-left: 20px;
     height: 100vh;
@@ -54,14 +53,12 @@ body {
     font-size: large;
 }
 
-.home img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: 90%;
+.content img {
+    height: 80%;
+    width: 80%;
     filter: drop-shadow(1px 1px 10px #409efc);
     animation: float 3s ease-in-out infinite;
+    margin-left: 20%;
 }
 
 @keyframes float {
@@ -80,26 +77,30 @@ body {
 
 .content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 20%;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
     font-size: larger;
+    border: 1px solid black;
+    height: 80vh;
 }
+
 
 .content .icons {
     justify-content: flex-start;
     margin-left: 0;
+    transition: .5s;
 }
 
 .content span {
     color: #409efc;
     filter: brightness(1.2);
 }
-
-.content p {
-    width: 30vw;
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
-
 
 .content h3 {
     white-space: nowrap;
