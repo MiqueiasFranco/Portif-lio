@@ -81,12 +81,11 @@ body {
     align-items: center;
     font-size: larger;
     height: 80vh;
+    width: 100vw;
 }
 
 
 .content .icons {
-    justify-content: flex-start;
-    margin-left: 0;
     transition: .5s;
 }
 
@@ -97,7 +96,9 @@ body {
 .apresentacao{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
 }
 
 .content h3 {
@@ -346,49 +347,35 @@ nav ul li a:hover {
 .biografia {
     display: flex;
     flex-direction: row;
-    height: 80vh;
-    text-align: center;
     align-items: center;
     justify-content: space-around;
-}
+    padding: 30px;
+    height: 100vh;
+    text-align: center;
+}  
 
 .biografia h3 {
     letter-spacing: 1px;
     color: #409efc;
     text-shadow: 1px 1px 2px black;
 }
-
-.historia {
+.historia , .experiencias {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    letter-spacing: 1px;
-    border: 1px dashed white;
-    border-radius: 1rem;
-    padding: 3rem;
-}
-
-.historia p {
-    margin-top: 10px;
-}
-
-.historia,
-.experiencias {
-    backdrop-filter: blur(10px);
-    background-color: transparent;
-    height: 50vh;
-    position: relative;
-}
-
-.experiencias {
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    gap: 1rem;
-    border: 1px dashed white;
-    border-radius: 1rem;
-    padding: 3rem;
+    backdrop-filter: blur(10px);
+    border: 2px dashed white;
+    border-radius: 5px;
+    height:100% ;
+    width: 45%;
+    padding: 10px;
 }
+
+.historia p{
+    min-height: 30%;
+}
+
 
 .experiencias ul {
     list-style: none;
@@ -411,7 +398,6 @@ nav ul li a:hover {
     width: 40%;
     filter: drop-shadow(1px 1px 2px black);
     background: none;
-    padding-left: 8%;
     gap: 1rem;
 }
 
