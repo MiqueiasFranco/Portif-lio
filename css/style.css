@@ -19,12 +19,11 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(45deg, black, #5C6374, #5C7463, #8AAF95, gray);
+    background: black;
     background-size: 800%;
     padding-top: 10px;
     padding-left: 8%;
     padding-right: 8%;
-    animation: color 20s ease infinite;
 }
 
 @keyframes color {
@@ -54,7 +53,6 @@ body {
 .content img {
     height: 80%;
     width: 80%;
-    filter: drop-shadow(1px 1px 10px #409efc);
     animation: float 3s ease-in-out infinite;
     margin-left: 20%;
 }
