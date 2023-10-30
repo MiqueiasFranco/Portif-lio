@@ -18,8 +18,8 @@
 .slider {
 
     margin: 0 auto;
-    width: 50%;
-    height: 400px;
+    width: 50vw;
+    height: 60vh;
     overflow: hidden;
     background-color: aliceblue;
     border-radius: 1rem;
@@ -29,7 +29,7 @@
 
 .slides {
     width: 400%;
-    height: 400px;
+    height: 100%;
     display: flex;
     position: relative;
 }

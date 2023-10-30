@@ -30,20 +30,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .home {
-
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: 100%;
-
-    }
-
-    .content {
-        height: 60%;
-        width: 100%;
-    }
-
+    
 }
 
 @media screen and (max-width: 830px) {
@@ -58,30 +45,39 @@
         gap: 2rem;
         align-items: center;
         text-align: center;
-        font-size: 25px;
         width: 70vw;
         height: 60vh;
         margin-top: -40px;
         align-items: center;
         margin-right: 6%;
     }
+    
+    
+    
     .content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         padding: 8%;
         padding-right: 8%;
-        height: 100vh;
+        height: 100%;
         width: 100vw;
     }
+    .content h3, p {
+        font-size: 1.3rem;
+    }
+    
 
     .content .img{
         margin-right: 15%;
+        height: 50%;
         order: -1;
     }
 
-
+    .biografia{
+        height: 90vh;
+    }
 
     .menu {
         display: flex;
@@ -98,6 +94,10 @@
         border: none;
         margin-top: 10px;
         transition: .5s;
+    }
+    .slider{
+        height: 20vh;
+        width: 50vw;
     }
 
 
@@ -125,9 +125,10 @@
         border-radius: 10px 0 0 10px;
         height: 100vh;
         width: 40vw;
-        z-index: 20;
     }
-    
+    .containerprojetos{
+        display: flex;
+    }
 }
 
 
@@ -136,8 +137,11 @@
         display: flex;
 
     }
-
+    
 }
+
+
+
 
 @keyframes mostrar {
     from {
